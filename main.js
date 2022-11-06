@@ -50,3 +50,65 @@ for(var i=0; i<fruit2.length; i++){
   }
 }
 console.log(fruit3)
+
+// Silver Medal
+
+const peopleArray = [
+    {
+      name: "Harrison Ford",
+      occupation: "Actor"
+    },
+    {
+      name: "Justin Bieber",
+      occupation: "Singer"
+    },
+    {
+      name: "Vladimir Putin",
+      occupation: "Politician"
+    },
+    {
+      name: "Oprah",
+      occupation: "Entertainer"
+    }
+  ]
+  
+
+
+// 1. Write a loop that will print out all the names of the people of the people array
+
+for(var i=0; i<peopleArray.length; i++){
+    console.log(peopleArray[i].name)
+}
+
+for(people of peopleArray){
+   console.log(people.name)
+}
+
+// 2. Write a loop that pushes the names into a names array, and the occupations into an occupations array.
+
+const names = []
+const occupations = []
+for(var i=0; i<peopleArray.length; i++){
+   names.push(peopleArray[i].name)
+   occupations.push(peopleArray[i].occupation)
+
+}
+console.log(names)
+console.log (occupations)
+
+/* 3. Write a loop that pushes every other name to an array starting with the first person, in this case "Harrison Ford",
+ and every other occupation to another array starting with, in this case, "Singer".
+
+*/
+
+const everyOtherName = []
+const everyOtherOccupation = []
+for(var i=0; i<peopleArray.length; i++){
+    if(i % 2 !==0){
+    everyOtherName.push(peopleArray[i].name)
+    everyOtherOccupation.push(peopleArray[i].occupation)
+    }
+
+ }
+console.log(everyOtherName)
+console.log(everyOtherOccupation)
